@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 
-const postSchema= new mongoose.Schema({
+const PostSchema=new mongoose.Schema({
     title:{
         type:String,
         required:true,
@@ -14,18 +14,20 @@ const postSchema= new mongoose.Schema({
     photo:{
         type:String,
         required:false,
+        
     },
     username:{
         type:String,
-        required:true
+        required:true,  
     },
     userId:{
         type:String,
-        required:true
+        required:true,  
     },
     categories:{
         type:Array,
+        
     },
 },{timestamps:true})
 
-module.exports=mongoose.model("post",postSchema)
+module.exports=mongoose.model("Post",PostSchema)
