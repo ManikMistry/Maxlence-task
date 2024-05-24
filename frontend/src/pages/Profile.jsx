@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
@@ -99,8 +100,8 @@ useEffect(()=>{
           <input onChange={(e)=>setEmail(e.target.value)} value={email} className="outline-none px-4 py-2 text-gray-500" placeholder="Your email" type="email"/>
           {/* <input onChange={(e)=>setPassword(e.target.value)} value={password} className="outline-none px-4 py-2 text-gray-500" placeholder="Your password" type="password"/> */}
           <div className="flex items-center space-x-4 mt-8">
-            <button onClick={handleUserUpdate} className="text-white font-semibold bg-black px-4 py-2 hover:text-black hover:bg-gray-400">Update</button>
-            <button onClick={handleUserDelete} className="text-white font-semibold bg-black px-4 py-2 hover:text-black hover:bg-gray-400">Delete</button>
+            <button onClick={handleUserUpdate} className="text-white font-semibold bg-red-300 hover:bg-red-400 px-4 py-2 hover:text-black">Update</button>
+            <button onClick={handleUserDelete} className="text-white font-semibold bg-red-300 hover:bg-red-400 px-4 py-2 hover:text-black">Delete</button>
           </div>
           {updated && <h3 className="text-green-500 text-sm text-center mt-4">user updated successfully!</h3>}
         </div>
