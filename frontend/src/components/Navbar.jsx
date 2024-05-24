@@ -25,7 +25,7 @@ const Navbar = () => {
     const {user}=useContext(UserContext)
     
   return (
-    <div className="flex items-center justify-between px-6 md:px-[200px] py-4">
+    <div className="flex items-center justify-between px-6 md:px-[200px] py-4 sticky top-0 bg-white z-50">
     <h1 className="text-lg md:text-xl font-extrabold"><Link to="/">Maxlence <span className=" text-red-300">Blog</span></Link></h1>
     {path==="/" && <div className="flex justify-center items-center space-x-0">
     <p onClick={()=>navigate(prompt?"?search="+prompt:navigate("/"))} className="cursor-pointer"><BsSearch/></p>
